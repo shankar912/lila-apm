@@ -1,0 +1,83 @@
+/* App base */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(1000px 800px at 30% 0%, rgba(99, 102, 241, 0.18), transparent 55%),
+    radial-gradient(900px 700px at 75% 20%, rgba(45, 212, 191, 0.14), transparent 55%),
+    radial-gradient(900px 700px at 65% 85%, rgba(244, 63, 94, 0.12), transparent 55%),
+    #070a12;
+  color: #e5e7eb;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+}
+
+/* Leaflet polish */
+.leaflet-container {
+  background: transparent;
+}
+
+/* Force tooltip theme (Leaflet defaults are bright) */
+.leaflet-container .leaflet-tooltip {
+  background: rgba(10, 16, 34, 0.92) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  color: rgba(229, 231, 235, 0.95) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45) !important;
+  border-radius: 12px !important;
+  padding: 8px 10px !important;
+  max-width: 320px !important;
+  white-space: normal !important;
+}
+
+.leaflet-container .leaflet-tooltip * {
+  color: inherit !important;
+}
+
+.leaflet-tooltip-top:before,
+.leaflet-tooltip-bottom:before,
+.leaflet-tooltip-left:before,
+.leaflet-tooltip-right:before {
+  border: none;
+}
+
+/* Range input */
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 28px;
+  background: transparent;
+}
+input[type='range']::-webkit-slider-runnable-track {
+  height: 8px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(99, 102, 241, 0.7), rgba(45, 212, 191, 0.7));
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+}
+input[type='range']::-moz-range-track {
+  height: 8px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(99, 102, 241, 0.7), rgba(45, 212, 191, 0.7));
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+input[type='range']::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+}
