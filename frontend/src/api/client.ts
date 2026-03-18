@@ -1,6 +1,6 @@
 import type { HeatmapResponse, MatchDetailResponse, MatchListItem, MetaResponse } from './types';
 
-const API_BASE = import.meta.env.VITE_API_BASE ?? 'http://127.0.0.1:8000';
+const API_BASE = import.meta.env.VITE_API_BASE ?? 'https://lila-apm.onrender.com';
 
 async function getJson<T>(path: string): Promise<T> {
   const res = await fetch(`${API_BASE}${path}`);

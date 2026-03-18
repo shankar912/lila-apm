@@ -50,7 +50,7 @@ npm install
 npm run dev
 ```
 
-By default the UI calls the backend at `http://127.0.0.1:8000`.
+By default the UI calls the backend at `https://lila-apm.onrender.com`.
 
 To change API base URL:
 
