@@ -31,6 +31,9 @@ index = DataIndex(DATA_ROOT)
 def _startup() -> None:
     index.build()
 
+@app.get("/")
+def root():
+    return {"message": "Backend is running"}
 
 @app.get("/api/meta", response_model=MetaResponse)
 def meta() -> MetaResponse:
